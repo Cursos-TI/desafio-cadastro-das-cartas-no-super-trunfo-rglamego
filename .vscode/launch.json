@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Depurar com MSYS2 (ucrt64)",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/CartasSuperTrunfo.exe",
+        "args": [],
+        "stopAtEntry": true,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+        "setupCommands": [
+          {
+            "description": "Habilita formatação para depuração",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "Compilar C"
+      }
+    ]
+  }
+  
